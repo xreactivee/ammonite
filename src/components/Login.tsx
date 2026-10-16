@@ -109,7 +109,7 @@ export default function Login({ initialError }: { initialError: string | null })
           <Logo size={18} />
           <Wordmark className="text-[17px]" />
         </div>
-        <span className="font-mono text-[11px] text-ink-400">v0.2.0</span>
+        <span className="font-mono text-[11px] text-ink-400">v0.3.0</span>
       </header>
 
       <div className="relative mx-auto flex h-full max-w-6xl items-center justify-between gap-20 px-12">

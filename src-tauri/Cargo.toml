@@ -1,6 +1,6 @@
 [package]
 name = "remote-vps"
-version = "0.2.0"
+version = "0.3.0"
 description = "Ammonite - an SSH desktop environment for a remote Linux server"
 authors = ["xreactive"]
 edition = "2024"
