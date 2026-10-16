@@ -86,7 +86,7 @@ export default function Settings() {
       </Group>
 
       <p className="text-[12px] text-ink-400">
-        Ammonite 0.3.0 — kayıtlı şifreler XChaCha20-Poly1305 ile şifrelenir, anahtar Windows Kimlik Bilgileri Yöneticisi'nde
+        Ammonite 0.3.1 — kayıtlı şifreler XChaCha20-Poly1305 ile şifrelenir, anahtar Windows Kimlik Bilgileri Yöneticisi'nde
         saklanır.
       </p>
     </div>

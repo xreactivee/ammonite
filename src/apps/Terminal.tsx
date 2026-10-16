@@ -136,8 +136,12 @@ export default function Terminal({ winId, props }: AppProps) {
     el.addEventListener("paste", onPaste, true);
 
     term.attachCustomKeyEventHandler((ev) => {
-      if (ev.type === "keydown" && ev.ctrlKey && ev.shiftKey && ev.code === "KeyC") {
-        navigator.clipboard.writeText(term.getSelection());
+      if (ev.ctrlKey && !ev.altKey && ev.code === "KeyC" && (ev.shiftKey || term.hasSelection())) {
+        if (ev.type === "keydown") {
+          ev.preventDefault();
+          if (term.hasSelection()) navigator.clipboard.writeText(term.getSelection());
+          term.clearSelection();
+        }
         return false;
       }
       if (ev.ctrlKey && !ev.altKey && ev.code === "KeyV") return false;
